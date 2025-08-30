@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bc605133eb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>SPTF_v0</title>
 </head>
 <body>
     <div class="container">
-        <nav>
+        <nav class="sidebar">
+            <!-- Menu de navegação fixo à esquerda da tela-->
             <div class="nav_logo">
                 <i class="fa-brands fa-spotify"></i>
             </div>
 
             <div class="nav_lib">
-                <p>Sua Biblioteca      <i class="fa-solid fa-layer-group"></i> </p>
+                <p><i class="fa-solid fa-layer-group"></i>   Sua Biblioteca</p>
+                
             </div>
 
             <div class="nav_playlist">
-                <h5>Crie sua primeira Playlist.</h5>
+                <h4>Crie sua primeira Playlist.</h4>
                 <p>É simples, fácil e rápido. Podemos te ajudar.</p>
                 <button>Criar Playlist</button>
             </div>
 
-            <div>
-                <h5>Que tal seguir um PodCast</h5>
+            <div class="nav_podcast">
+                <h4>Que tal seguir um PodCast ?</h4>
                 <p>Será avisado sobre novos episódios</p>
                 <button>Explorar PodCasts</button>
             </div>
 
+            <div class="nav_footer">
+                <a href="#">Legal</a>
+                <a href="#">Centro de Privacidade</a>
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre Anúncios</a>
+                <a href="#">Acessibilidade</a>
+            </div>
+
+            <button class="nav_lang">
+                <i class="fa-solid fa-globe"></i> Português do Brasil
+            </button>
+
         </nav>
 
+
         <main>
+            <header class="main_search_bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="O que deseja ouvir?">
+            </header>
+
+            <section class="main_content">
+
+                <h2>Artistas Populares</h2>
+                <div class="main_artist_grid"></div>
+
+                <h2>Albuns Populares</h2>
+                <div class="main_album_grid"></div>
+            </section>
 
         </main>
     </div>
     
 </body>
+
+<script src="./scripts.js"></script>
 </html>

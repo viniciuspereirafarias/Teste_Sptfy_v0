@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    padding: 25px;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_logo i {
+    font-size: 25px;
+}
+
+.nav_lib {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: #B7B3B6;
+}
+
+.nav_playlist, .nav_podcast {
+    background-color: #242424;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 13px;
+    border-radius: 8px;
+    align-items: left;
+}
+
+
+.nav_playlist button, .nav_podcast button {
+    background-color: #ffff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.nav_footer {
+    margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 10px;
+    color: #B7B3B6;
+}
+
+.nav_footer a {
+    text-decoration: underline;
+    color: #B7B3B6;
+    cursor: pointer;
+}
+
+.nav_lang {
+    margin-top: auto;
+    background-color: transparent;
+    border: 1px solid #B7B3B6;
+    color: #B7B3B6;
+    padding: 5px 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
